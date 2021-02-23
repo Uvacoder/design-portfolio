@@ -1,0 +1,41 @@
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-weight-lighter:         100;
+$font-weight-light:           200;
+$font-weight-normal:          300;
+// $font-weight-bold:            700;
+// $font-weight-bolder:          900;
+
+// $font-family-base:            $font-family-sans-serif;
+$font-weight-base:            $font-weight-normal;
+
+// $lead-font-size:              $font-size-base * 1.25 !default;
+// $lead-font-weight:            300 !default;
+  
+// $headings-font-family: 'Playfair Display', serif
+// $headings-font-family: 'Georgia', serif
+// $headings-font-family: 'EB Garamond', serif
+$headings-font-family: 'Playfair Display', serif;
+$headings-font-weight: 400;
+
+$display1-weight: 400;
+$display2-weight: 400;
+$display3-weight: 400;
+$display4-weight: 400;
+
+// $blockquote-small-color:      $gray-600 !default;
+// $blockquote-small-font-size:  $small-font-size !default;
+// $blockquote-font-size:        $font-size-base * 1.25 !default;
+
+
+// Custom Colors
+$content-text-color: #455065;
+
+// $theme-colors: ("primary": #0074d9);
+// $primary: red;
+$primary: #0074d9;
+
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_mixins.scss';
+@import '~bootstrap/scss/_variables.scss';
+
+$theme-colors: ("primary": $primary, "gray-500": $gray-500);

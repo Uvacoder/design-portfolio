@@ -1,0 +1,25 @@
+.content
+  p
+    font-size: 17px
+    font-weight: 300
+    line-height: 1.5
+    color: $content-text-color
+    // padding: 0 0 18px 36px
+    @include media-breakpoint-up(md)
+      font-size: 18px
+    @include media-breakpoint-up(lg)
+      font-size: 20px
+      line-height: 1.6
+
+  .has-badge
+    position: relative
+    .badges
+      position: absolute
+      right: 5px
+      bottom: 10px
+      z-index: 9
+      .badge
+        padding: 0.5em 1em
+        margin-right: .5em
+        font-weight: 400
+        background-color: $primary

@@ -1,0 +1,30 @@
+@import 'assets/scss/_variables.scss';
+
+// Then include the following
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+// And define any of your custom or additional CSS/SCSS here,
+// or via an @import
+
+@import './custom/buttons';
+@import './custom/form';
+@import './custom/layout';
+@import './custom/type';
+
+// Animations
+@import "animation";
+
+// Global Styles
+@import 'site';
+@import 'slideshow';
+@import 'grid';
+@import 'imagebox';
+@import 'content';
+@import 'blog';
+@import 'comments';
+@import 'section';
+@import 'collections';
+@import 'testimonials';
+@import 'error';
+@import 'space';

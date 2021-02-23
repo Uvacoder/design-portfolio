@@ -1,0 +1,86 @@
+$site__fontSize: 1.2em
+$navbar_height: 85px
+
+#site
+  &__main
+    height: 100%
+    display: flex
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
+
+.site
+  &__header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1030
+  &__name
+    // font-size: $site__fontSize
+    font-size: 1.25rem
+    font-family: var(--font-family-sans-serif)
+    margin: 0
+    padding: 0
+    font-weight: 500
+    &:not(.text-light)
+      a
+        color: $body-color
+        text-decoration: none
+    &.text-light
+      a
+        color: $light
+        text-decoration: none
+        &:hover
+          color: $light
+
+    @at-root html[data-theme=dark] &
+      &:not(.text-light)
+        a
+          color: var(--text-color)
+          text-decoration: none
+          &:hover
+            color: var(--text-color)
+  
+  &__navbar
+    min-height: $navbar_height
+    display: flex
+    align-items: center
+    position: relative
+    height: 100%
+
+    &__menu
+      font-size: $site__fontSize
+      display: flex
+      align-items: center
+      justify-content: space-between
+      // width: 300px
+      width: auto
+      padding-left: 1em
+      height: 100%
+      // height: auto
+      &--right
+        margin-left: auto
+        overflow: hidden
+        .item
+          margin-right: 1.5em
+          @include media-breakpoint-up(sm)
+            margin-right: 2em
+          &:last-child
+            margin-right: 0
+
+      
+      .action-button
+        display: none
+        @media (min-width: 300px) 
+          display: inline
+
+      
+      button:not(.btn)
+        border: 0
+        outline: none
+        background: transparent
+        padding: 0
+        margin: 0
+        line-height: 1em
+  
+  &__main
+    padding-top: $navbar_height

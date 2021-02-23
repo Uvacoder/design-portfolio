@@ -1,0 +1,52 @@
+.comments
+  .indented
+    .comment
+      padding-left: .5em
+      @include media-breakpoint-up(sm)
+        padding-left: 1em
+      @include media-breakpoint-up(md)
+        padding-left: 3em
+      @include media-breakpoint-up(lg)
+        padding-left: 6em
+    .indented
+      padding-left: .5em
+      @include media-breakpoint-up(sm)
+        padding-left: 1em
+      @include media-breakpoint-up(md)
+        padding-left: 3em
+      @include media-breakpoint-up(lg)
+        padding-left: 6em
+  .comment
+    display: flex
+    flex-direction: column
+    padding-bottom: 2em
+    @include media-breakpoint-up(sm)
+      flex-direction: row
+    figure
+      margin-bottom: 0
+      width: 40px
+      margin-right: 2em
+      flex: 0 0 40px
+      order: 1
+      figcaption
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+      @include media-breakpoint-up(sm)
+        width: 60px
+        flex: 0 0 60px
+        order: 0
+      @include media-breakpoint-up(md)
+        width: 100px
+        flex: 0 0 100px
+        order: 0
+    &__body
+      // flex: 1 1 auto
+    &__user
+      &__avatar
+        &--inline
+          display: inline
+          width: 40px !important
+          margin-right: .5em
+          @include media-breakpoint-up(sm)
+            display: none

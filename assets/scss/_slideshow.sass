@@ -1,0 +1,15 @@
+.slideshow
+  &__content
+    padding: 0 1.5em
+    user-select: none
+    width: 100%
+    max-width: 52em
+    h1
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05)
+    p
+      max-width: 30em
+      opacity: 0.8
+      @at-root .center#{&}
+        max-width: 100%
+      @at-root .right#{&}
+        float: right

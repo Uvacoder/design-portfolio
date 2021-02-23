@@ -1,0 +1,13 @@
+.testimonials
+  display: flex
+  justify-content: center
+
+.testimonial
+  &--content
+    background-color: $white
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.025)
+    border: 1px solid rgba(0,0,0,0.055)
+    @at-root html[data-theme=dark] &
+      background-color: $dark
+      box-shadow: 1px 5px 10px rgba(0,0,0,0.08)
+      border: 1px solid rgba(0,0,0,0.125)

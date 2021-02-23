@@ -1,0 +1,14 @@
+.blockquote
+  font-family: $headings-font-family
+  font-style: italic
+  max-width: 100%
+  margin-bottom: 1em
+  @include media-breakpoint-up(md)
+    max-width: 75%
+    margin-left: auto
+    margin-right: auto
+
+
+@for $var from 1 through 9
+  .font-weight-#{$var*100}
+    font-weight: #{$var*100}

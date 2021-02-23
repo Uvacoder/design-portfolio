@@ -1,0 +1,27 @@
+.imagebox
+  position: relative
+  padding-top: 50%
+  margin: 0
+  @media screen and (min-width: 600px)
+    /* 1:1 Aspect Ratio */
+    padding-top: 100% 
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    margin: auto
+    width: auto
+    // height: 80%
+    height: 90vw
+    padding: 2rem
+    max-width: 80%
+    object-fit: contain
+    @media screen and (min-width: 320px)
+      max-width: 250px
+      height: 130px
+    @media screen and (min-width: 600px)
+      max-width: 250px
+      height: 35%

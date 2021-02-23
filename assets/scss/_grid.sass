@@ -1,0 +1,17 @@
+.d-grid
+  display: grid
+  grid-gap: 15px
+  grid-template-columns: 1fr
+  @media screen and (min-width: 600px)
+    grid-template-columns: 1fr 1fr
+  // @media screen and (min-width: 769px)
+    // grid-template-columns: 1fr 1fr
+  // @media screen and (min-width: 992px)
+    // grid-template-columns: 1fr 1fr
+  @media screen and (min-width: 993px)
+    grid-template-columns: 1fr 1fr 1fr
+
+  &--gap-25
+    grid-gap: 15px
+    @include media-breakpoint-up(md)
+      grid-gap: 25px
