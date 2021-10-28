@@ -22,7 +22,7 @@
               pill
               :variant="isLight"
             >
-              Buy now
+              $$$
             </b-button>
             <MainMenuButton
               ref="siteMenu"
